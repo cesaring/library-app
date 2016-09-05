@@ -1,0 +1,38 @@
+@import "bootstrap";
+
+body {
+  padding-top: 20px;
+}
+
+.orange {
+  color: orange;
+}
+
+.white {
+  color: white;
+}
+.navbar-inverse .navbar-brand {
+  //color: orange;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-primary  {
+  background: #111111;
+  color: orange;
+
+}
+
+.btn-primary:hover{
+  background: #303030;
+  color: orange;
+}
+
+.btn-primary:focus {
+  background: #303030;
+  color: orange;
+
+
+}
