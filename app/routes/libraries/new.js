@@ -12,7 +12,7 @@ export default Ember.Route.extend({
     },
     
     willTransition() {
-        //rollbackAttribute() removes the record from the store
+        //rollbackAttributes() removes the record from the store
         //if the model 'isNew'
         this.controller.get('model').rollbackAttributes();
     }
