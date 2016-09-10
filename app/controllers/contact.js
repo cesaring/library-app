@@ -6,9 +6,12 @@ export default Ember.Controller.extend({
 
   actions:
     {
-      contactMe() {
+      contactMe(myModel) {
       //  alert('Helloooo!');
-        this.set('responseMessage', `Awesome! I'm on my way! Until then, look for an email to your Project Tracker!`);
+        myModel.save().then(()=>
+  this.set('responseMessage', `Awesome! I'm on my way! Until then, look for an email to your Project Tracker!`)
+        
+        );
 
       }
     }
