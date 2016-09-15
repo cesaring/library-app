@@ -16,6 +16,7 @@ Router.map(function() {
   });
   this.route('libraries', function(){
        this.route('index');
+       this.route('edit', {path: '/:library_id/edit'});
        this.route('new');
   });
 });
