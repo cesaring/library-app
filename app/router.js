@@ -12,7 +12,10 @@ Router.map(function() {
 
   this.route('admin', function() {
     this.route('invitations');
-    this.route('contacts');
+    this.route('contacts', function() {
+        this.route('index', {path: '/'});  
+        this.route('edit', {path: '/:contact_id/edit'});  
+    });
   });
   this.route('libraries', function(){
        this.route('index');
