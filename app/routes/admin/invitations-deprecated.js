@@ -7,7 +7,7 @@ export default Ember.Route.extend({
     
     actions: {
         deleteInvitation(invitation) {
-            let confirmation = confirm('Are you sure?');
+            let confirmation = confirm('deprecated--Are you sure?');
 
             if(confirmation) {
                 invitation.destroyRecord();
