@@ -15,12 +15,14 @@ Router.map(function() {
         this.route('index', {path: '/'});
         this.route('edit', {path: '/:invitation_id/edit'});
     });
-    
-    
+
+
     this.route('contacts', function() {
         this.route('index', {path: '/'});  
         this.route('edit', {path: '/:contact_id/edit'});  
     });
+    
+    this.route('seeder');
   });
   this.route('libraries', function(){
        this.route('index');
