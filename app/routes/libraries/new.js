@@ -26,7 +26,7 @@ export default Ember.Route.extend({
     willTransition() {
         //rollbackAttributes() removes the record from the store
         //if the model 'isNew'
-        let model = this.controller.get('model);')
+        let model = this.controller.get('model);');
         
         if (model.get('isNew')) {
             model.destroyRecord();
