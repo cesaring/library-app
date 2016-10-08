@@ -5,13 +5,15 @@
         <tr>
             <th>Title</th>
         <th>Author</th>
+        <th>Date Released</th>
        </tr>
     </thead>
     <tbody>
         {{#each model as |book| }}
         <tr>
             <td> {{book.title}} </td>
-            <td> {{book.author.name}} </td>
+            <td> {{book.author.name}}</td>
+            <td> {{book.formattedReleaseYear}} </td>
         </tr>
         {{/each}}
     </tbody>
